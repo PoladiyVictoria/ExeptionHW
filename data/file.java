@@ -7,7 +7,7 @@ public class file {
     public void recordInFile(String[] contact){
         String fileName = contact[0];
         FileWriter fileWriter = null;
-        String cont = contact.toString();
+        String cont = String.join(" ", contact);
         try {
            fileWriter = new FileWriter(fileName.toLowerCase() + ".txt");
            fileWriter.write(cont);
@@ -29,4 +29,6 @@ public class file {
 
         }
     }
+    
+    
 }

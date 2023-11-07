@@ -64,7 +64,7 @@ public class contact {
                 case 5:
                     System.out.println("Введите пол m или w");
                     string = in.next();
-                    if (string.length() == 0 | string.length() > 1 | string != "m" | string != "w") {
+                    if (string.length() != 1 ) {
                         throw new LengthNameExeption("Пол введен некорректно!!");
                     }else{
                         contact[i] = string;
